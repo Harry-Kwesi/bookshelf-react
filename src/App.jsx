@@ -7,7 +7,6 @@ import { Dialog } from "@reach/dialog";
 import "@reach/dialog/styles.css";
 import "bootstrap/dist/css/bootstrap-reboot.css";
 import { Button, Input, FormGroup } from "./components/lib";
-import { css } from "@emotion/react";
 
 function LoginForm({ onSubmit, buttonText }) {
   function handleSubmit(event) {
@@ -71,6 +70,9 @@ function App() {
       }}
     >
       <img src={bookshelf} alt="bookshelf" width="80" height="80" />
+      <h3 className="text-3xl bg-slate-500 font-bold underline">
+        You are my God
+      </h3>
       <h1>Bookshelf</h1>
       <div
         css={{
@@ -106,6 +108,7 @@ function App() {
           close
         </Button>
         <h3>Login</h3>
+
         <LoginForm onSubmit={login} buttonText="login" />
       </Dialog>
 
