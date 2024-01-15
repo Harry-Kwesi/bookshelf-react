@@ -11,13 +11,6 @@ function BookRow({ book }) {
 
   return (
     <div
-      css={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "flex-end",
-        position: "relative",
-      }}
-    >
       <div
         aria-labelledby={id}
         css={{
